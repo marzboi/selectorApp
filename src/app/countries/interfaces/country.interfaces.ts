@@ -25,14 +25,11 @@ export interface Country {
   translations: { [key: string]: Translation };
   latlng: number[];
   landlocked: boolean;
-  borders?: string[];
   area: number;
   demonyms: Demonyms;
   flag: string;
   maps: Maps;
   population: number;
-  gini?: { [key: string]: number };
-  fifa?: string;
   car: Car;
   timezones: string[];
   continents: string[];
@@ -40,6 +37,10 @@ export interface Country {
   coatOfArms: CoatOfArms;
   startOfWeek: StartOfWeek;
   capitalInfo: CapitalInfo;
+  cioc?: string;
+  borders?: string[];
+  gini?: { [key: string]: number };
+  fifa?: string;
   postalCode?: PostalCode;
 }
 
@@ -63,31 +64,31 @@ export interface CoatOfArms {
 }
 
 export interface Currencies {
-  ALL?: All;
+  NOK?: All;
   EUR?: All;
+  GBP?: All;
+  GGP?: All;
+  RON?: All;
+  MKD?: All;
+  ALL?: All;
+  DKK?: All;
+  CHF?: All;
+  CZK?: All;
+  PLN?: All;
+  RSD?: All;
+  RUB?: All;
+  IMP?: All;
+  SEK?: All;
+  MDL?: All;
+  FOK?: All;
+  BGN?: All;
+  BYN?: All;
+  BAM?: BAM;
+  JEP?: All;
+  HUF?: All;
   UAH?: All;
   GIP?: All;
-  BGN?: All;
-  RON?: All;
-  GBP?: All;
-  JEP?: All;
-  GGP?: All;
-  DKK?: All;
-  FOK?: All;
-  CHF?: All;
-  NOK?: All;
-  RSD?: All;
-  PLN?: All;
-  MDL?: All;
-  HUF?: All;
-  CZK?: All;
-  BYN?: All;
   ISK?: All;
-  RUB?: All;
-  SEK?: All;
-  BAM?: BAM;
-  MKD?: All;
-  IMP?: All;
 }
 
 export interface All {
@@ -121,54 +122,54 @@ export interface Idd {
 }
 
 export interface Languages {
-  sqi?: string;
-  ell?: string;
-  tur?: string;
-  eng?: string;
-  gle?: string;
-  hrv?: string;
-  fin?: string;
-  swe?: string;
-  nld?: string;
-  srp?: string;
-  por?: string;
-  spa?: string;
-  ukr?: string;
-  de?: string;
-  deu?: string;
-  bul?: string;
-  ron?: string;
-  fra?: string;
-  nrf?: string;
-  nfr?: string;
-  ita?: string;
-  lat?: string;
-  lit?: string;
-  dan?: string;
-  fao?: string;
-  gsw?: string;
-  roh?: string;
   nor?: string;
+  deu?: string;
+  fra?: string;
+  nld?: string;
+  lav?: string;
+  cat?: string;
+  eng?: string;
+  mlt?: string;
+  nfr?: string;
+  ron?: string;
+  mkd?: string;
+  sqi?: string;
+  dan?: string;
+  est?: string;
+  ces?: string;
+  slk?: string;
+  swe?: string;
+  pol?: string;
+  srp?: string;
+  rus?: string;
+  glv?: string;
+  spa?: string;
+  ell?: string;
+  fao?: string;
+  bul?: string;
+  bel?: string;
+  cnr?: string;
+  bos?: string;
+  hrv?: string;
+  lit?: string;
+  de?: string;
+  ltz?: string;
   nno?: string;
   nob?: string;
   smi?: string;
-  cat?: string;
-  ltz?: string;
-  est?: string;
-  pol?: string;
+  nrf?: string;
   hun?: string;
-  ces?: string;
-  slk?: string;
-  cnr?: string;
-  bel?: string;
-  rus?: string;
-  isl?: string;
-  lav?: string;
-  mlt?: string;
+  ita?: string;
+  ukr?: string;
+  fin?: string;
+  por?: string;
+  lat?: string;
   slv?: string;
-  bos?: string;
-  mkd?: string;
-  glv?: string;
+  gle?: string;
+  gsw?: string;
+  roh?: string;
+  tur?: string;
+  isl?: string;
 }
 
 export interface Maps {
